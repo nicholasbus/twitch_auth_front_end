@@ -1,3 +1,17 @@
 .app {
   font-family: Roboto;
+  background-color: #000;
+}
+
+#landing-container {
+  display: grid;
+  place-items: center;
+
+  height: 100vh;
+  /* background-color: #333; */
+}
+
+#landing-container svg {
+  height: 10rem;
+  color: #1D75EC;
 }
