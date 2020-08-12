@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 // import CssBaseline from '@material-ui/core/CssBaseline';
 // import Typography from '@material-ui/core/Typography';
@@ -9,6 +9,16 @@ import { authUser } from './API.js';
 
 function App() {
 
+  useEffect(() => {
+
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
+
+    console.log(urlParams.get('twitch_id')) // id to make API requests with
+    //console.log(urlParams.get('access_token')) // id to make API requests with
+
+  }, [])
 
   return (
     <div className="app">
