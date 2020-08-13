@@ -7,3 +7,16 @@ export const authUser = () => {
     window.close();
 } 
 
+export const getFollowing = async (twitchId) => {
+    const res = await axios({
+        method: 'get', 
+        url: `https://api.twitch.tv/helix/users/follows?from_id=${twitchId}`,
+        headers: {
+            'Client-ID': `${process.env.TWITCH_CLIENT_ID}`
+        }
+
+    })
+    
+    return res.json();
+
+}

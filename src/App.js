@@ -5,7 +5,7 @@ import './App.css';
 import Container from '@material-ui/core/Container';
 import Button from '@material-ui/core/Button';
 
-import { authUser } from './API.js';
+import { authUser, getFollowing } from './API.js';
 
 function App() {
 
@@ -16,7 +16,9 @@ function App() {
 
 
     console.log(urlParams.get('twitch_id')) // id to make API requests with
-    //console.log(urlParams.get('access_token')) // id to make API requests with
+    console.log(urlParams.get('access_token')) // id to make API requests with
+
+    // console.log(getFollowing(urlParams.get('twitch_id')))
 
   }, [])
 
