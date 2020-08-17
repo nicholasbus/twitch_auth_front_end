@@ -1,5 +1,12 @@
 import React, { Component } from 'react'
+import '../user.css';
+
 import { getUser } from '../API'
+import Container from '@material-ui/core/Container';
+import Avatar from '@material-ui/core/Avatar';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import Grid from '@material-ui/core/Grid';
  
 export default class User extends Component {
    
@@ -44,7 +51,30 @@ export default class User extends Component {
     render() {
         return (
             <div>
-                {this.state.username}
+                <Grid container className="main-container">
+                    
+
+                    <Grid item xs={4}>
+                        
+                    </Grid>
+                    <Grid item xs={4} id="top-middle">
+                        <Avatar alt="profile_img" src={this.state.profile_img_url} className="automargin" />
+                        <List className="automargin">
+                            <ListItem>Username: {this.state.username}</ListItem>
+                            <ListItem>Broadcaster Type: {this.state.broadcaster_type}</ListItem>
+                            <ListItem>Description: {this.state.description}</ListItem>
+                            <ListItem>View Count: {this.state.view_count}</ListItem>
+                        </List>
+                    </Grid>
+                    <Grid item xs={4}>
+                        
+                    </Grid>
+
+
+                    
+
+
+                </Grid>
             </div>
         )
     }

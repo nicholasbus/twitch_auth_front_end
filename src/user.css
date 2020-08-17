@@ -1,0 +1,15 @@
+.main-container {
+    background-color: #333;
+    
+}
+
+ul {
+    width: 50% !important;
+    margin: auto !important;
+    font-family: 'roboto';
+    color: #fff;
+}
+
+.automargin {
+    margin: auto;
+}
