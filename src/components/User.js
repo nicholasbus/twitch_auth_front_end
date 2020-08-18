@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import '../user.css';
 
 import { getUser } from '../API'
-import Container from '@material-ui/core/Container';
 import Avatar from '@material-ui/core/Avatar';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
